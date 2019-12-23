@@ -1,0 +1,237 @@
+//===========================================
+// -Navbar start
+//===========================================
+.navigation {
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    z-index: 9999;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 700px) {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    li {
+        margin: 0 8px;
+        font-size: rem(16);
+        list-style-type: none;
+        transition: 1s;
+        border-bottom: 3px solid transparent;
+
+        &:hover {
+            border-bottom: 3px solid black;
+            transform: translate(3px, 4px);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+.side-navigation {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0vw;
+    background-color: white;
+    filter: drop-shadow(1px 10px 10px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+
+    ul {
+        list-style-type: none;
+        margin-left: -10px;
+
+        li {
+            position: relative;
+
+
+            &:hover {
+                &:before {
+                    width: 70px;
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: -20px;
+                top: 30px;
+                width: 20px;
+                height: 3px;
+                background-color: black;
+                transition: 500ms;
+            }
+
+            a {
+                font-size: rem(25);
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+    }
+
+}
+
+.side-nav-active {
+    opacity: 1 !important;
+    z-index: 999 !important;
+    width: 65vw !important;
+}
+.humburger {
+    // box-shadow: 1px 1px 0px rgba(0,0,0,1);
+    padding: 10px;
+    position: absolute !important;
+    top: 7% !important;
+    left: 11% !important;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+
+    &:hover {
+        &::after {
+            top: 87px;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        pointer-events: all;
+        opacity: 1;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -28px;
+        top: 36px;
+        transform: scale(1.4) rotateZ(-90deg);
+        width: 30px;
+        height: 1px;
+        background-color: gray;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: -22px;
+        top: 17px;
+        width: 19px;
+        height: 14px;
+        background-color: transparent;
+        border: 6px double white;
+        transition: 2s;
+    }
+
+    span {
+        margin: 5px 0;
+        display: block;
+        height: 4px;
+        background-color: gray;
+        transition: 500ms;
+    }
+
+    span:nth-child(1) {
+        width: 33px;
+    }
+
+    span:nth-child(2) {
+        width: 25px;
+    }
+
+    span:nth-child(3) {
+        width: 20px;
+    }
+}
+
+.humburger2 {
+    // @media screen and (max-width: 700px) {
+    //     z-index: 1002;
+    // }
+
+    span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 9px;
+        width: 33px;
+    }
+
+    span:nth-child(2) {
+        opacity: 0;
+        width: 33px;
+    }
+
+    span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -9px;
+        width: 33px;
+    }
+}
+
+.search-wrapper {
+    z-index: 9999;
+    position: absolute !important;
+    top: 8% !important;
+    right: 11% !important;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -27px;
+        top: -2px;
+        width: 25%;
+        height: 108%;
+        border-radius: 100%;
+        margin: 0;
+        padding: 0;
+        border: 2px solid gray;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        background: url(../../assets/images/Search.png);
+        background-size: 25%;
+        position: absolute;
+        right: -27px;
+        top: -2px;
+        width: 25%;
+        height: 108%;
+        border-top-right-radius: 50%;
+        margin: 0;
+        border-bottom-right-radius: 50%;
+        padding: 0;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        border-right: 2px solid gray;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        padding: 10px 25px 10px 10px;
+    }
+}
+
+//===========================================
+// -Navbar end
+//===========================================

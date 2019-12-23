@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/dist/style.css">
+
+  <title>SASS</title>
+</head>
+
+<body>
+<div class="side-navigation">
+    <ul>
+        <li onclick="HomeSec()"><a href="#">Home</a></li>
+        <li onclick="AboutSec()"><a href="#">About</a></li>
+        <li onclick="ServiceSec()"><a href="#">Service</a></li>
+        <li onclick="ClientSec()"><a href="#">Client</a></li>
+        <li onclick="ContactSec()"><a href="#">Contact</a></li>
+      </ul>
+</div>
+  <nav>
+    <ul class="navigation">
+      <li onclick="HomeSec()"><a href="#">Home</a></li>
+      <li onclick="AboutSec()"><a href="#">About</a></li>
+      <li onclick="ServiceSec()"><a href="#">Service</a></li>
+      <li onclick="ClientSec()"><a href="#">Client</a></li>
+      <li onclick="ContactSec()"><a href="#">Contact</a></li>
+    </ul>
+
+
+    <div class="humburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="search-wrapper">
+      <input type="text" placeholder="Search">
+    </div>
+  </nav>
+  <div class="designer-name">Designed By: <strong>Talha Arsalan</strong></div>
+
+  <div class="background-text" id="parallax">
+
+    <video autoplay loop muted>
+      <source src="assets/images/video.mp4" type="video/mp4">
+    </video>
+    <h1 id="home">
+      Welcome To <span class="layer" data-depth="0.4">T.</span> Templates
+    </h1>
+  </div>
+
+  <section class="default-sec-wrapper deactive-section about" id="about">
+    <div class="container p-2">
+      <h1 class="title">About</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </div>
+    </div>
+  </section>
+  <section class="default-sec-wrapper deactive-section service" id="service">
+    <div class="container p-2">
+      <h1 class="title">Service</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequa
+        <div class="card-group mt-3 mb-3">
+          <div class="card">
+            <img src="assets/images/cool1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/cool1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/cool1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequa
+      </div>
+    </div>
+  </section>
+  <section class="default-sec-wrapper deactive-section client" id="client">
+    <div class="container p-2">
+      <h1 class="title">Client</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+        <section id="slider" class="mt-3 mb-3">
+          <ul class="slider-wrapper">
+            <li class="current-slide">
+              <img src="assets/images/cool1.jpg" title="" alt="">
+
+              <div class="caption">
+                <h2 class="slider-title">Diseño web</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, placeat est. Alias illo hic quo
+                  nobis, aspernatur iste ut voluptate.</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/images/cool1.jpg" title="" alt="">
+
+              <div class="caption">
+                <h2 class="slider-title">Diseño Responsive</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto placeat aliquid tempore harum,
+                  similique!</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/images/cool1.jpg" title="" alt="">
+
+              <div class="caption">
+                <h2 class="slider-title">Identidad Corporativa</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos dicta laudantium voluptatem
+                  minima! Dolorum tempore dolores excepturi omnis provident. Commodi quis aperiam maiores, dolore a
+                  perferendis!</p>
+              </div>
+            </li>
+
+            <li>
+              <img src="assets/images/cool1.jpg" title="" alt="">
+
+              <div class="caption">
+                <h2 class="slider-title">Desarrollo Web</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore dignissimos laudantium.</p>
+              </div>
+            </li>
+          </ul>
+          <!-- Sombras -->
+          <div class="slider-shadow"></div>
+
+          <!-- Controles de Navegacion -->
+          <ul id="control-buttons" class="control-buttons"></ul>
+        </section>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aenim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </div>
+    </div>
+  </section>
+  <section class="default-sec-wrapper deactive-section contact" id="contact">
+    <div class="container p-2">
+      <h1 class="title">Contact</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor
+        <section class="get-in-touch">
+          <h1 class="title text-center">Get in touch</h1>
+          <form class="contact-form row">
+            <div class="form-field col-6">
+              <input id="name" class="input-text js-input" type="text" required>
+              <label class="label" for="name">Name</label>
+            </div>
+            <div class="form-field col-6">
+              <input id="email" class="input-text js-input" type="email" required>
+              <label class="label" for="email">E-mail</label>
+            </div>
+            <div class="form-field col-12">
+              <input id="message" class="input-text js-input" type="text" required>
+              <label class="label" for="message">Message</label>
+            </div>
+            <div class="form-field col-12 align-center">
+              <input class="submit-btn" type="submit" value="Submit">
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+  <script src="assets/dist/main.js"></script>
+</body>
+
+</html>
